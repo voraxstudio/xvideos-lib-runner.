@@ -1,24 +1,25 @@
 {
-  "name": "@rodrigogs/xvideos",
-  "description": "xvideos.com api implementation.",
-  "version": "1.3.0",
+  "name": "xvideos-lib-runner",
+  "description": "Microserviço para scraping com xvideos-lib",
+  "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "license": "BSD-3-Clause",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rodrigogs/xvideos.git"
+    "url": "https://github.com/voraxstudio/xvideos-lib-runner.git"
   },
   "keywords": [
     "crawler",
-    "porn",
-    "spider",
-    "scrapper",
-    "api",
+    "scraper",
     "xvideos",
     "api",
-    "library"
+    "library",
+    "microservice"
   ],
   "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
     "eslint": "eslint . --ext .js",
     "test": "cross-env NODE_ENV=test mocha --exit lib/**/*.spec.js",
     "coverage": "nyc --reporter=html --reporter=lcov npm test"
@@ -26,6 +27,7 @@
   "dependencies": {
     "axios": "^0.21.4",
     "cheerio": "^1.0.0-rc.10",
+    "express": "^4.18.2",
     "puppeteer": "^8.0.0"
   },
   "devDependencies": {
@@ -36,9 +38,10 @@
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
     "mocha": "^9.1.4",
+    "nodemon": "^2.0.22",
     "nyc": "^15.1.0"
   },
   "engines": {
-    "node": ">=7.6.0"
+    "node": ">=16.0.0"
   }
 }
