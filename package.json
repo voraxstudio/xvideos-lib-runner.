@@ -1,5 +1,5 @@
 {
-  "name": "xvideos-lib-runner",
+  "name": "@voraxstudio/xvideos-lib-runner",
   "description": "Microserviço para scraping com xvideos-lib",
   "version": "1.0.0",
   "main": "index.js",
