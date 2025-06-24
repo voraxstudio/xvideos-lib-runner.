@@ -1,6 +1,6 @@
-import { search } from 'xvideos-lib';
-
 const express = require('express');
+const { search } = require('./lib');
+
 const app = express();
 const port = process.env.PORT || 3000;
 
